@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R站</title>
+    <title>八四班</title>
     <link rel="stylesheet" href="static/plugins/bootstrap-3.4.1/css/bootstrap.css">
     <link rel="stylesheet" href="static/plugins/font-awesome-4.7.0/css/font-awesome.css">
     <style>
@@ -87,7 +87,23 @@
     </div>
     <div class="container">
         <div class="col-sm-9">
-            
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">资料</h3>
+                </div>
+                <div class="panel-body">
+                    <div style="padding-bottom: 15px;">想要得到资料?咱们做人也是要有底线的,验证四班人</div>
+                    <input type="password" id="passwords">
+                    <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary">
+                    确定
+                    </button>
+                    <div style="display: none;" id="donghui-1">
+                        <img src="static/img/donghui-1.png" alt="">
+                    </div>
+
+                </div>
+
+              </div>   
 
 
             </div>
@@ -96,7 +112,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">本月猴条</div>
                 <div class="panel-body">
-                   欢迎来到玉龙学校九4班
+                    欢迎来到玉龙学校八4班
                 </div>
                 <div class="panel-footer">
 
@@ -110,6 +126,19 @@
         // var left_Background_1 = left_Background[0]
 
         // left_Background_1.setAttribute("style", "height:" + innerHeight + "px;")
+        
+       
+        
+        var Bu = document.getElementById('myButton')
+        Bu.onclick = function(){
+            var pa = document.getElementById('passwords').value
+            if (pa == 77677){
+                window.alert("正确")
+                var donghui1 = document.getElementById('donghui-1')
+                donghui1.style.display = "inline"
+            }
+        }
+      
 
     </script>
 </body>
